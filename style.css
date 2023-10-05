@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+    color: aliceblue
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#nav{
+    height: 100px;
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(16, 15, 15);
+}
+#nav img{
+    height: 70px;
+    margin-right: 110px;
+}
+#nav-prt1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav-prt1 h4{
+    margin-right: 50px;
+    font-size: 19px;
+    font-weight: 800;
+    color: aliceblue;
+}
+#nav-prt2 i{
+    margin-right: 20px;
+    font-size: 21px;
+    font-weight: 1000;
+    color: aliceblue;
+}
+#content{
+    height: calc(100% - 100px);
+    width: 100%;
+    position: relative;
+    display: flex;
+    padding: 120px 0px;
+}
+#left{
+    height: 100%;
+    width: 40%;
+    padding: 40px 100px;
+    color: white;
+}
+#left h1{
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+#left h2{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+#left p{
+    font-size: 15px;
+    font-weight: 500;
+}
+#left button{
+    height: 25px;
+    width: 100px;
+    border: lightblue 1px solid;
+    outline: none;
+    background-color: rgb(38, 38, 38);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 10;
+    cursor: pointer;
+    margin-top: 30px;
+}
+#right{
+    height: 100%;
+    width: 60%;
+    padding: 30px 0px;
+    position: relative;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+#right::-webkit-scrollbar{
+    display: none;
+}
+.elem{
+    height: 340px;
+    width: 340px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);/*x-axis, y-axis, blur*/
+    border-radius: 10px;
+    margin-right: 20px;
+    display: inline-block;
+}
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.elem h4{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    background-color: none;
+    color: aliceblue;
+    padding: 15px 30px;
+    border-radius: 6px;
+
+}
